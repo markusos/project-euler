@@ -1,7 +1,9 @@
 #!/usr/bin/python
+import os
+
 def maxPath(fileName):
     triangle =[]
-    f = open(fileName, 'r')
+    f = open(os.path.dirname(__file__) + '\\' + fileName, 'r')
     for line in f:
         triangle.append(map(int, line.replace('\n', '').split(" ")))
 

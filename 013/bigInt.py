@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+import os
+
 class bigInt:
     number = []
     def __init__(self, numString):
@@ -35,7 +38,7 @@ class bigInt:
 
 def sumNumbers():            
     numbers = []
-    f = open('numbers.txt', 'r')
+    f = open(os.path.dirname(__file__) + '\\numbers.txt', 'r')
     for line in f:
         numbers.append(map(int, list(line.replace('\n', ''))))
 
