@@ -1,18 +1,19 @@
 #!/usr/bin/python
+import math
 
-def eratosthenes(maxNr):
+def eratosthenes(n):
     primes = []
-    numbers = range(2, maxNr)
-    notPrime = set()
-    i = 0
-    while i < len(numbers):
-        a = numbers[i]
-        if a not in notPrime:
-            primes.append(a)
-        j = i + 1
-        for j in xrange(numbers[i], maxNr, a):
-            notPrime.add(j)
-        i = i + 1
+    numbers = [True]*n
+
+    for i in range(2, int(math.sqrt(n)+1)):
+        if numbers[i] == True:
+            for j in xrange(i*i, n, i):
+                numbers[j] = False
+                
+    for i in range(2, n):
+        if numbers[i] == True:
+            primes.append(i)    
+    
     return primes
 
 def primeSum(number):
