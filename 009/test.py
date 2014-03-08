@@ -12,7 +12,7 @@ class TestPythagoreanTriplet(unittest.TestCase):
         result = specialPythagoreanTriplet.specialPythagoreanTriplet();
         self.assertEqual(result, 31875000)
 
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

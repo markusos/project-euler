@@ -12,7 +12,7 @@ class TestEratosthenes(unittest.TestCase):
         result = eratosthenes.primeSum(2000000);
         self.assertEqual(result, 142913828922)
 
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

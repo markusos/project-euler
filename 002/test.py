@@ -16,7 +16,7 @@ class TestFibonacci(unittest.TestCase):
         result = fibonacci.evenFibSum(self.below);
         self.assertEqual(result, 4613732)
         
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

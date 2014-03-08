@@ -18,7 +18,7 @@ class TestNumberToLetter(unittest.TestCase):
     def test_numberToLetter_count(self):
         result = numberToLetter.countLetters(range(1, 1001))
         self.assertEqual(result, 21124)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

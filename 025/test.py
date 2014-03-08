@@ -26,7 +26,7 @@ class TestFib (unittest.TestCase):
     def test_fibOfLength_1000(self):
         result = fib.fibOfLength(1000)
         self.assertEqual(result, 4782)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
         
 if __name__ == '__main__':
     unittest.main()

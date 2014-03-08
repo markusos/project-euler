@@ -2,4 +2,4 @@
 import itertools
 
 def permutation(i, data):
-    return map(lambda x: ''.join(x), list(itertools.permutations(data)))[i]
+    return list(map(lambda x: ''.join(x), list(itertools.permutations(data))))[i]

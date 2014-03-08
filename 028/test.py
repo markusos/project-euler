@@ -11,7 +11,7 @@ class TestSpiral (unittest.TestCase):
     def test_spiral_1001(self):
         result = spiral.diagonalSum(spiral.spiral(1001))
         self.assertEqual(result, 669171001)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
         
 if __name__ == '__main__':
     unittest.main()

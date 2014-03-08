@@ -15,7 +15,7 @@ class TestPermutations (unittest.TestCase):
         self.index = 1000000-1
         result = permutations.permutation(self.index, self.data)
         self.assertEqual(result, "2783915460")
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
         
 if __name__ == '__main__':
     unittest.main()

@@ -15,7 +15,7 @@ class TestSundays(unittest.TestCase):
     def test_countSundays(self):
         result = sundays.countSundays(1901, 2000)
         self.assertEqual(result, 171)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

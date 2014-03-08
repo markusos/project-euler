@@ -29,7 +29,7 @@ def factors(n):
   factorList = []
   factor = pollard_rho(n)
   if factor != 0:
-    factorList += factors(n/factor)
+    factorList += factors(n//factor)
     factorList += factors(factor)
   else:
     return [n]

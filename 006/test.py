@@ -13,8 +13,7 @@ class TestSumSquareDiff(unittest.TestCase):
         self.number = 100
         result = sumSquareDiff.sumSquareDiff(self.number);
         self.assertEqual(result, 25164150)
-
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

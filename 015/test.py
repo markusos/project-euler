@@ -11,7 +11,7 @@ class TestLatticePaths(unittest.TestCase):
     def test_latticePaths_20(self):
         result = latticePaths.latticePaths(20)
         self.assertEqual(result, 137846528820)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

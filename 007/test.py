@@ -13,8 +13,7 @@ class TestEuler(unittest.TestCase):
         self.number = 10001
         result = euler.euler(self.number)[self.number-1];
         self.assertEqual(result, 104743)
-
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

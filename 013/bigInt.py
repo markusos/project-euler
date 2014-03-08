@@ -3,8 +3,8 @@ import os
 
 class bigInt:
     number = []
-    def __init__(self, numString):
-        self.number = numString
+    def __init__(self, number):
+        self.number = number
         
     def getPaddedNumber(self, length):
         while len(self.number) < length:
@@ -40,8 +40,9 @@ def sumNumbers():
     numbers = []
     f = open(os.path.dirname(__file__) + '\\numbers.txt', 'r')
     for line in f:
-        numbers.append(map(int, list(line.replace('\n', ''))))
-
+        numbers.append([int(i) for i in list(line.replace('\n', ''))])
+    f.close()
+    
     sum = bigInt([0])
 
     for n in numbers:

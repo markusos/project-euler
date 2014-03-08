@@ -27,7 +27,7 @@ class TestCycles (unittest.TestCase):
     def test_longestCycle(self):
         result = cycles.longestCycle(1000)
         self.assertEqual(result, 983)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
         
 if __name__ == '__main__':
     unittest.main()

@@ -11,7 +11,7 @@ class TestPowerDigitSum(unittest.TestCase):
     def test_powerDigitSum_1000(self):
         result = powerDigitSum.powerDigitSum(1000)
         self.assertEqual(result, 1366)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

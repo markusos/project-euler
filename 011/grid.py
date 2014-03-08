@@ -16,8 +16,8 @@ def readGrid():
     grid = []
     f = open(os.path.dirname(__file__) + '\\grid.txt', 'r')
     for line in f:
-        grid.append(map(int, line.replace('\n', '').split(" ")))
-
+        grid.append([int(i) for i in line.replace('\n', '').split(" ")])
+    f.close()
     return grid
 
 def lineSum(grid, i, j):

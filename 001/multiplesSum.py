@@ -1,5 +1,5 @@
 #!/usr/bin/python
-def multiples(multiples, below):
+def multiplesSum(multiples, below):
     sum = 0
     for i in range(0, below):
         for m in multiples:

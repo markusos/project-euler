@@ -7,7 +7,7 @@ def eratosthenes(n):
 
     for i in range(2, int(math.sqrt(n)+1)):
         if numbers[i] == True:
-            for j in xrange(i*i, n, i):
+            for j in range(i*i, n, i):
                 numbers[j] = False
                 
     for i in range(2, n):

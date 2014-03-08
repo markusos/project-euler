@@ -6,7 +6,7 @@ def readNames():
     f = open(os.path.dirname(__file__) + '\\names.txt', 'r')
     for line in f:
         names += line.split(",")
-
+    f.close()
     names = map(lambda each:each.strip("\""), names)
     return names
 

@@ -1,4 +1,5 @@
 #!/usr/bin/python
+import math
 
 def multiples(number):      
     factors = []
@@ -24,10 +25,10 @@ def factors(n):
     f = []
     if isPrime(n):
         return [n]
-    for i in range(2, n):
+    for i in range(2, int(math.sqrt(n)+1)):
         if n % i == 0:
             f = f + factors(i)
-            f = f + factors(n/i)
+            f = f + factors(n//i)
             return f
 
 def isPrime(n):
@@ -36,11 +37,3 @@ def isPrime(n):
         if n == p:
             return True
     return False
-
-
-    
-
-    
-
-
-

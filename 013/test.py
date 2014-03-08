@@ -14,7 +14,7 @@ class TestBigInt (unittest.TestCase):
     def test_bigInt(self):
         result = str(bigInt.sumNumbers())[:10]
         self.assertEqual(result, "5537376230")
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

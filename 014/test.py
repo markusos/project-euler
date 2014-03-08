@@ -11,7 +11,7 @@ class TestSequence(unittest.TestCase):
     def test_sequence_longestCollatzSequence(self):
         result = sequence.longestCollatzSequence()
         self.assertEqual(result, 837799)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

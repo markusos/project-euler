@@ -13,7 +13,7 @@ class TestAbundantNumbers (unittest.TestCase):
     def test_nonAbundentNumberSum(self):
         result = abundantNumbers.nonAbundentNumberSum()
         self.assertEqual(result, 4179871)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
         
 if __name__ == '__main__':
     unittest.main()

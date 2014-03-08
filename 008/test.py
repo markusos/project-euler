@@ -14,7 +14,7 @@ class TestFindValues(unittest.TestCase):
         result = findValues.findValues(self.number);
         self.assertEqual(result, 40824)
 
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

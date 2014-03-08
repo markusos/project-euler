@@ -15,7 +15,7 @@ class TestFactorialunittest(unittest.TestCase):
     def test_factorialSum_100(self):
         result = factorial.factorialSum(100)
         self.assertEqual(result, 648)
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()

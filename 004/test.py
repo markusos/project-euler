@@ -14,7 +14,7 @@ class TestPalindrom(unittest.TestCase):
         result = palindrom.largestPalindromFromProduct(self.below);
         self.assertEqual(result, 906609)
 
-        print "Result: {0}".format(result)
+        print("Result: {0}".format(result))
 
 if __name__ == '__main__':
     unittest.main()
