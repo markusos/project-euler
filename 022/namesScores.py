@@ -3,7 +3,7 @@ import os
 
 def readNames():
     names = []
-    f = open(os.path.dirname(__file__) + '\\names.txt', 'r')
+    f = open(os.path.dirname(__file__) + '/names.txt', 'r')
     for line in f:
         names += line.split(",")
     f.close()
@@ -14,7 +14,7 @@ def namesScores():
     totalScore = 0
     names = sorted(readNames())
     for i in range(0, len(names)):
-        totalScore +=  stringScore(names[i])*(i + 1)   
+        totalScore += stringScore(names[i])*(i + 1)
         
     return totalScore
 

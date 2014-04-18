@@ -38,7 +38,7 @@ class bigInt:
 
 def sumNumbers():            
     numbers = []
-    f = open(os.path.dirname(__file__) + '\\numbers.txt', 'r')
+    f = open(os.path.dirname(__file__) + '/numbers.txt', 'r')
     for line in f:
         numbers.append([int(i) for i in list(line.replace('\n', ''))])
     f.close()

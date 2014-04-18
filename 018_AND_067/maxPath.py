@@ -3,7 +3,7 @@ import os
 
 def maxPath(fileName):
     triangle =[]
-    f = open(os.path.dirname(__file__) + '\\' + fileName, 'r')
+    f = open(os.path.dirname(__file__) + '/' + fileName, 'r')
     for line in f:
         triangle.append([int(i) for i in line.replace('\n', '').split(" ")])
     f.close()

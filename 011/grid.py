@@ -14,7 +14,7 @@ def checkGrid(grid):
 
 def readGrid():
     grid = []
-    f = open(os.path.dirname(__file__) + '\\grid.txt', 'r')
+    f = open(os.path.dirname(__file__) + '/grid.txt', 'r')
     for line in f:
         grid.append([int(i) for i in line.replace('\n', '').split(" ")])
     f.close()
