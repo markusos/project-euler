@@ -21,4 +21,3 @@ def fibOfLength(length):
         nextFib()
         i += 1
     return i
-    
