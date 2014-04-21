@@ -8,7 +8,7 @@ Consider all integer combinations of ab for 2 ≤ a ≤ 5 and 2 ≤ b ≤ 5:
 32=9, 33=27, 34=81, 35=243
 42=16, 43=64, 44=256, 45=1024
 52=25, 53=125, 54=625, 55=3125'
-``
+```
 
 If they are then placed in numerical order, with any repeats removed, we get the following sequence of 15 distinct terms:
 
