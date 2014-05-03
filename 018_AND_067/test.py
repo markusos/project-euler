@@ -18,5 +18,10 @@ class TestMaxPath (unittest.TestCase):
         self.assertEqual(result, 7273)
         print("Result: {0}".format(result))
 
+    def test_maxPathSum_3(self):
+        result = maxPath.maxPath("triangle2.txt")
+        self.assertEqual(result, 732506)
+        print("Result: {0}".format(result))
+
 if __name__ == '__main__':
     unittest.main()
