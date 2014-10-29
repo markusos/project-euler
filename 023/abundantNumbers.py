@@ -3,12 +3,12 @@ import os
 import math
 
 
-def nonAbundentNumberSum():
+def nonAbundantNumberSum():
     result = 0
     limit = 28123
     abundant = abundantNumbers(limit)
     for i in range(0, limit):
-        if not isAbundentNumberSum(i, abundant):
+        if not isAbundantNumberSum(i, abundant):
             result += i
     return result
 
@@ -21,7 +21,7 @@ def abundantNumbers(limit):
     return abundant
 
 
-def isAbundentNumberSum(number, abundant):
+def isAbundantNumberSum(number, abundant):
     for i in abundant:
         if i >= number:
             return False
@@ -31,7 +31,7 @@ def isAbundentNumberSum(number, abundant):
 
 
 def divisors(n):
-    divisors = set([1])
+    divisors = {1}
     for i in range(2, int(math.sqrt(n) + 1)):
         if n % i == 0:
             divisors.add(i)

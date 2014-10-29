@@ -1,9 +1,9 @@
 #!/usr/bin/python
-import cycles 
+import cycles
 import unittest
 
-class TestCycles (unittest.TestCase):
 
+class TestCycles(unittest.TestCase):
     def test_fraction(self):
         result = cycles.fractionCycle(2)
         self.assertEqual(result, '')
@@ -28,6 +28,7 @@ class TestCycles (unittest.TestCase):
         result = cycles.longestCycle(1000)
         self.assertEqual(result, 983)
         print("Result: {0}".format(result))
-        
+
+
 if __name__ == '__main__':
     unittest.main()

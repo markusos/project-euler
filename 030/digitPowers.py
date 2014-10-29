@@ -18,6 +18,7 @@ def digitPowers(powers):
 
     return found
 
+
 def determineLimit(powers):
     limit = 0
     number = 0

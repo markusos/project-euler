@@ -1,12 +1,15 @@
 #!/usr/bin/env python
 
 import unittest
-import sys, os
+import sys
+import os
 
 for file in os.listdir('.'):
-    if os.path.isfile(file): pass
-    else: sys.path.append('./' + file)
+    if os.path.isfile(file):
+        pass
+    else:
+        sys.path.append('./' + file)
 
 if __name__ == "__main__":
-    suite = unittest.TestLoader().discover('.', pattern = "test.py")
+    suite = unittest.TestLoader().discover('.', pattern="test.py")
     unittest.TextTestRunner(verbosity=2).run(suite)

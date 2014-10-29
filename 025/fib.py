@@ -2,10 +2,12 @@
 fib1 = 1
 fib2 = 1
 
+
 def init():
     global fib1, fib2
     fib1 = 1
-    fib2 = 1   
+    fib2 = 1
+
 
 def nextFib():
     global fib1, fib2
@@ -13,6 +15,7 @@ def nextFib():
     fib1 = fib2
     fib2 = fib
     return fib
+
 
 def fibOfLength(length):
     init()

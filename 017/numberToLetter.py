@@ -1,38 +1,44 @@
 #!/usr/bin/python
 
-numbers = ["",
-    "one",	 
-    "two",
-    "three",	
-    "four",
-    "five",
-    "six",
-    "seven",
-    "eight",
-    "nine",
-    "ten",
-    "eleven",
-    "twelve",
-    "thirteen",
-    "fourteen",
-    "fifteen",
-    "sixteen",
-    "seventeen",
-    "eighteen",
-    "nineteen",
-    "twenty"]
+numbers = \
+    [
+        "",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+        "ten",
+        "eleven",
+        "twelve",
+        "thirteen",
+        "fourteen",
+        "fifteen",
+        "sixteen",
+        "seventeen",
+        "eighteen",
+        "nineteen",
+        "twenty"
+    ]
 
-tens = [
-    "",
-    "",
-    "twenty",
-    "thirty",
-    "forty",
-    "fifty",
-    "sixty",
-    "seventy",
-    "eighty",
-    "ninety"]
+tens = \
+    [
+        "",
+        "",
+        "twenty",
+        "thirty",
+        "forty",
+        "fifty",
+        "sixty",
+        "seventy",
+        "eighty",
+        "ninety"
+    ]
+
 
 def numberToLetters(number):
     i = number
@@ -41,7 +47,7 @@ def numberToLetters(number):
     ten = int(number[len(number) - 2])
     hundred = int(number[len(number) - 3])
     tenAndSingular = int(str(ten) + str(singular))
-    
+
     if i < 20:
         return numbers[tenAndSingular]
     elif i < 100:
@@ -59,6 +65,7 @@ def numberToLetters(number):
         return "one thousand"
     else:
         return "N/A"
+
 
 def countLetters(numberRange):
     nrOfLetters = 0

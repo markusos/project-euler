@@ -1,9 +1,9 @@
 #!/usr/bin/python
-import fib 
+import fib
 import unittest
 
-class TestFib (unittest.TestCase):
 
+class TestFib(unittest.TestCase):
     def test_fib(self):
         fib.init()
         result = fib.nextFib()
@@ -22,11 +22,12 @@ class TestFib (unittest.TestCase):
     def test_fibOfLength_3(self):
         result = fib.fibOfLength(3)
         self.assertEqual(result, 12)
-      
+
     def test_fibOfLength_1000(self):
         result = fib.fibOfLength(1000)
         self.assertEqual(result, 4782)
         print("Result: {0}".format(result))
-        
+
+
 if __name__ == '__main__':
     unittest.main()

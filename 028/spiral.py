@@ -1,20 +1,21 @@
 #!/usr/bin/python
 
+
 # Returns an array of size 'size' initialized as a spiral
 # with value 1 in the center and size^2 in the upper right corner
 def spiral(size):
     array = [[0 for i in range(size)] for j in range(size)]
 
     number = 1
-    current = (size // 2, size // 2) 
+    current = (size // 2, size // 2)
     direction = (0, 1)
-    
+
     step = 0
-    stepsToDirectionChange = 1;
+    stepsToDirectionChange = 1
     turns = 0
-    
+
     while number <= size * size:
-        # Set current possition to number
+        # Set current position to number
         array[current[0]][current[1]] = number
         number += 1
         # Move current to next step
@@ -37,11 +38,12 @@ def spiral(size):
             turns += 1
             if turns % 2 == 0:
                 stepsToDirectionChange += 1
-           
-    return  array
+
+    return array
+
 
 # returns the sum of the two diagonals,
-# excluding overlaping center possition
+# excluding overlapping center position
 def diagonalSum(array):
     size = len(array)
 

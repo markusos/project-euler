@@ -3,25 +3,27 @@ import math
 
 sequenceLength = {}
 
+
 def nextNumber(n):
     if n % 2 == 0:
-        return n/2
+        return n / 2
     else:
-        return 3*n + 1
+        return 3 * n + 1
+
 
 def sequence(start):
     global sequenceLength
     seq = [1]
     n = start
-    
+
     while n != 1 and n not in sequenceLength:
         seq.append(n)
         n = nextNumber(n)
 
     if n in sequenceLength:
-        length = len(seq) + sequenceLength[n]    
+        length = len(seq) + sequenceLength[n]
     else:
-        length = len(seq) 
+        length = len(seq)
 
     l = length
     for n in seq:
@@ -29,6 +31,7 @@ def sequence(start):
         l -= 1
 
     return length
+
 
 def longestCollatzSequence():
     longest = 0

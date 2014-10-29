@@ -5,6 +5,6 @@ def multiplesSum(multiples, below):
         for m in multiples:
             if i % m == 0:
                 sum += i
-                break;
-            
+                break
+
     return sum

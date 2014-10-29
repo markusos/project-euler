@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import math
 
+
 def euler(nr):
     primes = [2]
     examine = 3
@@ -8,14 +9,14 @@ def euler(nr):
         prime = True
         for p in primes:
             if p > int(math.sqrt(examine) + 1):
-                break    
+                break
             if examine % p == 0:
                 prime = False
                 break
         if prime:
             primes.append(examine)
 
-        examine = examine + 1
+        examine += 1
 
     return primes
 
