@@ -1,10 +1,10 @@
-031 -
+032 - Pandigital products
 ======
 
-In England the currency is made up of pound, £, and pence, p, and there are eight coins in general circulation:
+We shall say that an n-digit number is pandigital if it makes use of all the digits 1 to n exactly once; for example, the 5-digit number, 15234, is 1 through 5 pandigital.
 
-1p, 2p, 5p, 10p, 20p, 50p, £1 (100p) and £2 (200p).
-It is possible to make £2 in the following way:
+The product 7254 is unusual, as the identity, 39 × 186 = 7254, containing multiplicand, multiplier, and product is 1 through 9 pandigital.
 
-1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
-How many different ways can £2 be made using any number of coins?
+Find the sum of all products whose multiplicand/multiplier/product identity can be written as a 1 through 9 pandigital.
+
+HINT: Some products can be obtained in more than one way so be sure to only include it once in your sum.
