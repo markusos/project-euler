@@ -19,8 +19,3 @@ def euler(nr):
         examine += 1
 
     return primes
-
-
-
-        
-
